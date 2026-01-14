@@ -1,0 +1,163 @@
+.auth-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #fafafa;
+}
+
+.auth-card {
+  background: white;
+  border: 1px solid #dbdbdb;
+  padding: 40px;
+  width: 100%;
+  max-width: 350px;
+  text-align: center;
+}
+
+.auth-logo {
+  font-family: 'Segoe UI', sans-serif;
+  font-weight: bold;
+  font-size: 32px;
+  margin-bottom: 25px;
+}
+
+.auth-subtitle {
+  color: #8e8e8e;
+  font-weight: 600;
+  margin-bottom: 20px;
+  font-size: 16px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+form input {
+  background: #fafafa;
+  border: 1px solid #dbdbdb;
+  border-radius: 3px;
+  padding: 10px;
+  font-size: 12px;
+}
+
+.auth-btn {
+  background: #0095f6;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  padding: 8px;
+  font-weight: bold;
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+.auth-divider {
+  margin: 20px 0;
+  color: #8e8e8e;
+  font-size: 13px;
+  position: relative;
+}
+
+.auth-link-text {
+  margin-top: 20px;
+  font-size: 14px;
+}
+
+.auth-link-text a {
+  color: #0095f6;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* register.css */
+/* Container jo poore page ko cover karega */
+.register-container {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); /* Blue-Purple Gradient */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Register Card Style */
+.register-card {
+    background: rgba(255, 255, 255, 0.9);
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+}
+
+.register-card h2 {
+    margin-bottom: 25px;
+    color: #333;
+    font-size: 28px;
+    font-weight: 600;
+}
+
+/* Input Fields Style */
+.register-form input {
+    width: 100%;
+    padding: 12px 15px;
+    margin: 10px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-sizing: border-box; /* padding handle karne ke liye */
+    outline: none;
+    transition: 0.3s;
+    font-size: 16px;
+}
+
+.register-form input:focus {
+    border-color: #667eea;
+    box-shadow: 0 0 8px rgba(102, 126, 234, 0.3);
+}
+
+/* Sign Up Button Style */
+.register-button {
+    width: 100%;
+    background-color: #667eea;
+    color: white;
+    padding: 14px 20px;
+    margin: 20px 0 10px 0;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.register-button:hover {
+    background-color: #5a6fd6;
+    transform: translateY(-2px);
+}
+
+/* Mobile number ke niche chota text (Optional) */
+.helper-text {
+    font-size: 12px;
+    color: #777;
+    margin-top: -5px;
+    margin-bottom: 10px;
+    text-align: left;
+}
+
+/* Link Style */
+.login-link {
+    margin-top: 15px;
+    font-size: 14px;
+    color: #555;
+}
+
+.login-link a {
+    color: #667eea;
+    text-decoration: none;
+    font-weight: bold;
+}

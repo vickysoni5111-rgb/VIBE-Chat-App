@@ -1,0 +1,175 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #fafafa;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+}
+
+.home-container {
+    max-width: 500px; /* Mobile look for Desktop */
+    margin: 0 auto;
+    background: #fff;
+    min-height: 100vh;
+    padding-bottom: 60px;
+    border-left: 1px solid #dbdbdb;
+    border-right: 1px solid #dbdbdb;
+}
+
+/* Header */
+.home-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 15px;
+    position: sticky;
+    top: 0;
+    background: #fff;
+    border-bottom: 1px solid #dbdbdb;
+    z-index: 100;
+}
+
+.logo {
+    font-size: 22px;
+    font-weight: bold;
+    color: #262626;
+}
+
+.header-right {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.auth-buttons a {
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 600;
+    margin-right: 10px;
+}
+
+.btn-login { color: #0095f6; }
+.btn-register { background: #0095f6; color: white; padding: 5px 10px; border-radius: 5px; }
+
+.header-icons {
+    display: flex;
+    gap: 15px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.message-icon {
+    text-decoration: none;
+}
+
+.icon-badge {
+    position: relative;
+}
+
+.icon-badge small {
+    position: absolute;
+    top: -5px;
+    right: -10px;
+    background: red;
+    color: white;
+    font-size: 10px;
+    padding: 2px 5px;
+    border-radius: 50%;
+}
+
+/* Stories */
+.stories-container {
+    display: flex;
+    overflow-x: auto;
+    padding: 15px 10px;
+    gap: 15px;
+    border-bottom: 1px solid #dbdbdb;
+}
+
+.stories-container::-webkit-scrollbar { display: none; }
+
+.story-item {
+    text-align: center;
+    font-size: 11px;
+    min-width: 70px;
+}
+
+.story-ring {
+    width: 65px;
+    height: 65px;
+    border-radius: 50%;
+    border: 2px solid #e1306c;
+    padding: 2px;
+    margin-bottom: 5px;
+}
+
+.story-ring.mine { border-color: #dbdbdb; }
+
+.story-ring img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+/* Posts */
+.post-card {
+    border-bottom: 1px solid #dbdbdb;
+    margin-bottom: 10px;
+}
+
+.post-header {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    align-items: center;
+}
+
+.user-info { display: flex; align-items: center; gap: 10px; }
+.user-avatar-small img { width: 32px; height: 32px; border-radius: 50%; object-fit: cover; }
+.username { font-weight: 600; font-size: 14px; }
+
+.post-image img {
+    width: 100%;
+    display: block;
+}
+
+.post-footer { padding: 10px; }
+.post-actions { display: flex; justify-content: space-between; font-size: 22px; margin-bottom: 8px; }
+.left-actions { display: flex; gap: 15px; }
+.action-icon { cursor: pointer; }
+.likes-count { font-weight: 600; font-size: 14px; margin-bottom: 5px; }
+.post-caption { font-size: 14px; line-height: 1.4; }
+.username-inline { font-weight: 600; margin-right: 5px; }
+
+/* Bottom Nav */
+.bottom-nav {
+    position: fixed;
+    bottom: 0;
+    max-width: 500px;
+    width: 100%;
+    background: #fff;
+    display: flex;
+    justify-content: space-around;
+    padding: 10px 0;
+    border-top: 1px solid #dbdbdb;
+}
+
+.nav-item { font-size: 24px; cursor: pointer; }
+.user-nav-avatar img { width: 24px; height: 24px; border-radius: 50%; }
+
+.avatar-circle {
+  width: 24px;
+  height: 24px;
+  background-color: #0095f6;
+  color: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 12px;
+  font-weight: bold;
+}

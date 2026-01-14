@@ -1,0 +1,156 @@
+.chat-page-container {
+    display: flex;
+    height: 100vh;
+    background-color: #fff;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Sidebar */
+.chat-sidebar {
+    width: 350px;
+    border-right: 1px solid #dbdbdb;
+    display: flex;
+    flex-direction: column;
+}
+
+.sidebar-header {
+    padding: 20px;
+    border-bottom: 1px solid #dbdbdb;
+}
+
+.user-item {
+    display: flex;
+    align-items: center;
+    padding: 15px 20px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.user-item:hover { background: #f4f4f4; }
+.user-item.active { background: #efefef; }
+
+.avatar {
+    width: 45px;
+    height: 45px;
+    background: #0095f6;
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    margin-right: 15px;
+}
+
+/* Main Area */
+.chat-main-area {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    background: #fff;
+}
+
+.chat-header {
+    padding: 15px 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #dbdbdb;
+}
+
+.message-box {
+    flex: 1;
+    padding: 20px;
+    overflow-y: auto;
+    background-color: #fafafa;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Messages Bubbles */
+.message-wrapper {
+    display: flex;
+    margin-bottom: 10px;
+    max-width: 70%;
+}
+
+.message-wrapper.sent {
+    align-self: flex-end;
+}
+
+.message-wrapper.received {
+    align-self: flex-start;
+}
+
+.message-content {
+    padding: 10px 15px;
+    border-radius: 18px;
+    font-size: 14px;
+    position: relative;
+}
+
+.sent .message-content {
+    background-color: #3797f0;
+    color: white;
+}
+
+.received .message-content {
+    background-color: #efefef;
+    color: #262626;
+}
+
+.msg-time {
+    font-size: 10px;
+    opacity: 0.7;
+    display: block;
+    margin-top: 5px;
+    text-align: right;
+}
+
+/* Input area */
+.input-area {
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    border-top: 1px solid #dbdbdb;
+}
+
+.input-area input {
+    flex: 1;
+    padding: 12px;
+    border: 1px solid #dbdbdb;
+    border-radius: 25px;
+    outline: none;
+}
+
+.send-btn {
+    background: none;
+    border: none;
+    color: #0095f6;
+    font-size: 20px;
+    cursor: pointer;
+}
+/* Mobile responsive fix */
+@media (max-width: 600px) {
+    .chat-sidebar {
+        display: none; /* Mobile par sidebar chhupa dein sirf chat dikhayein */
+    }
+    .chat-page-container {
+        flex-direction: column;
+    }
+}
+
+.messages-window {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Scrollbar ko sundar banane ke liye */
+.messages-window::-webkit-scrollbar {
+    width: 5px;
+}
+.messages-window::-webkit-scrollbar-thumb {
+    background-color: #ccc;
+    border-radius: 10px;
+}
